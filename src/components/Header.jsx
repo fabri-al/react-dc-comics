@@ -93,9 +93,9 @@ function Header() {
                             let varClass = (product.active === true) ? "link-top" : ""; //creo una variabile d'appoggio per
                                                                                             //l'operatore ternario
 
-                            /* let classeDaUsare = "";         
+                            /* let varClass = "";         
                             if (product.active === true) {     //alternativa all'operatore ternario
-                                classeDaUsare = "link-top";
+                                varClass = "link-top";
                                 }  */
                           
 
