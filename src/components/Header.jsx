@@ -90,7 +90,7 @@ function Header() {
                     {
                         products.map((product, i) => { //con il metodo map prendo l'elemento e l'indice
 
-                            let classeDaUsare = (product.active === true) ? "link-top" : ""; //creo una variabile d'appoggio per
+                            let varClass = (product.active === true) ? "link-top" : ""; //creo una variabile d'appoggio per
                                                                                             //l'operatore ternario
 
                             /* let classeDaUsare = "";         
@@ -99,7 +99,7 @@ function Header() {
                                 }  */
                           
 
-                            return <li key={i} className={classeDaUsare}>{product.testo}</li>
+                            return <li key={i} className={varClass}>{product.testo}</li>
                         })
 
                     }
