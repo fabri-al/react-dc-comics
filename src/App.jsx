@@ -5,8 +5,8 @@ import Footer from "./components/Footer.jsx";
 
 function App() {
 
-   <a class="nav-link-top" href="#">Characters</a>,
-   <a class="nav-link-top" href="#">Comics</a>
+  /*  <a class="nav-link-top" href="#">Characters</a>,
+   <a class="nav-link-top" href="#">Comics</a> */
 
   return (
     <>

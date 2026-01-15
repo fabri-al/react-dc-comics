@@ -1,33 +1,33 @@
 import { useState } from "react";
 
 //Creo un array di oggetti
-const products = [ 
+const comics = [
 
     {
-        id: 1,              
-        testo: "Characters",
+        id: 1,
+        nome: "Characters",
         link: "#",
         active: false        //per ogni oggetto, oltre alle altre chiavi, creo anche una chiave che sia booleana, 
-                            //per capire qual è l'oggetto attivo
+        //per capire qual è l'oggetto attivo
     },
 
     {
         id: 2,
-        testo: "Comics",
+        nome: "Comics",
         link: "#",
         active: true
     },
 
     {
         id: 3,
-        testo: "Movies",
+        nome: "Movies",
         link: "#",
         active: false
     },
 
     {
         id: 4,
-        testo: "tv",
+        nome: "tv",
         link: "#",
         active: false
 
@@ -35,42 +35,42 @@ const products = [
 
     {
         id: 5,
-        testo: "Games",
+        nome: "Games",
         link: "#",
         active: false
     },
 
     {
         id: 6,
-        testo: "collectibles",
+        nome: "collectibles",
         link: "#",
         active: false
     },
 
     {
         id: 7,
-        testo: "videos",
+        nome: "videos",
         link: "#",
         active: false
     },
 
     {
         id: 8,
-        testo: "fans",
+        nome: "fans",
         link: "#",
         active: false
     },
 
     {
         id: 9,
-        testo: "news",
+        nome: "news",
         link: "#",
         active: false
     },
 
     {
         id: 10,
-        testo: "shop",
+        nome: "shop",
         link: "#",
         active: false
     }
@@ -88,18 +88,18 @@ function Header() {
                 <nav class="navbar-nav">
 
                     {
-                        products.map((product, i) => { //con il metodo map prendo l'elemento e l'indice
+                        comics.map((comic, i) => { //con il metodo map prendo l'elemento e l'indice
 
-                            let varClass = (product.active === true) ? "link-top" : ""; //creo una variabile d'appoggio per
-                                                                                            //l'operatore ternario
+                            let varClass = (comic.active === true) ? "link-top" : ""; //creo una variabile d'appoggio per
+                            //l'operatore ternario
 
                             /* let varClass = "";         
                             if (product.active === true) {     //alternativa all'operatore ternario
                                 varClass = "link-top";
                                 }  */
-                          
 
-                            return <li key={i} className={varClass}>{product.testo}</li>
+
+                            return <li key={i} className={varClass}>{comic.nome}</li>
                         })
 
                     }
