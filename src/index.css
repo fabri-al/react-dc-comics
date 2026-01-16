@@ -368,7 +368,8 @@ button {
 
   position: relative;
   top: 105px;
- display: block;
+  display: block;
   margin: 0 auto;
   background-color: rgb(0, 115, 255);
+  cursor: pointer;
 }
