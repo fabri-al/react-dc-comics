@@ -169,8 +169,8 @@ function Main() {
             <img src="public/jumbotron.jpg" alt="" />
             </div>
 
-
-
+            <div id ="targhetta">CURRENT SERIES</div>
+         
 
             <div id="main-voci-container">
                 <div id="main-voci">
@@ -188,6 +188,7 @@ function Main() {
                         })
                     }
                 </div>
+                 <button id ="load-more">LOAD MORE</button>
             </div>
         </div>
     )
